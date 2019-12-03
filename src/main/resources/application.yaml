@@ -5,6 +5,14 @@ server:
 spring:
   application:
     name: schedule-app
+#    log level
+logging:
+  level:
+    com:
+      mq:
+        handler: info
+        jobs: warn
+
 schedule:
   url: "classpath:scheduleConfig.json"
 
@@ -13,3 +21,4 @@ jobs:
     cron: "0 */1 * * * ?"
   my:
     cron: "0 */2 * * * ?"
+
