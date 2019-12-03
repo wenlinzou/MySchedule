@@ -1,9 +1,8 @@
 package com.mq.jobs;
 
-import com.mq.constant.Constant;
 import com.mq.handler.RefreshScheduleHandler;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.Trigger;
 import org.springframework.scheduling.TriggerContext;
 import org.springframework.scheduling.annotation.SchedulingConfigurer;
@@ -22,7 +21,9 @@ import javax.annotation.Resource;
 @Component
 public class RefreshConfigJobs implements SchedulingConfigurer {
 
-    private String frequency = "0 */1 * * * ?";
+    @Value("${jobs.refresh.cron}")
+    private String frequency;
+
     @Resource
     private RefreshScheduleHandler refreshScheduleHandler;
 

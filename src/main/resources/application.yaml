@@ -9,5 +9,7 @@ schedule:
   url: "classpath:scheduleConfig.json"
 
 jobs:
+  refresh:
+    cron: "0 */1 * * * ?"
   my:
     cron: "0 */2 * * * ?"
