@@ -10,3 +10,9 @@
 
 
 当前支持修改热更新，默认更新配置的配置是1分钟一次，是`RefreshSchedule`处理。
+
+
+执行命令
+```jshelllanguage
+nohup java -jar schedule-1.0-SNAPSHOT.jar &
+```
