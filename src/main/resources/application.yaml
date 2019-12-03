@@ -11,7 +11,7 @@ logging:
     com:
       mq:
         handler: info
-        jobs: warn
+        jobs: info
 
 schedule:
   url: "classpath:scheduleConfig.json"

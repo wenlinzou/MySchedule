@@ -18,5 +18,5 @@ mvn clean package -DskipTests
 ```
 - 执行命令
 ```jshelllanguage
-nohup java -jar schedule-1.0-SNAPSHOT.jar &
+nohup java -jar MySchedule-1.0-SNAPSHOT.jar &
 ```
