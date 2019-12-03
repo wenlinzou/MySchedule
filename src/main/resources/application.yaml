@@ -1,0 +1,13 @@
+server:
+  port: 10003
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: schedule-app
+schedule:
+  url: "classpath:scheduleConfig.json"
+
+jobs:
+  my:
+    cron: "0 */2 * * * ?"
