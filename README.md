@@ -7,4 +7,6 @@
 
 示例：
 如`MySchedule`默认配置的`0 */2 ** ?`，需要修改为每隔5分钟执行，此时只需要修改`scheduleConfig.json`中"com.mq.handler.MyHandler":"0 */5 ** ?",
-默认更新配置的配置是1分钟一次，是`RefreshSchedule`处理。
+
+
+当前支持修改热更新，默认更新配置的配置是1分钟一次，是`RefreshSchedule`处理。
