@@ -2,7 +2,7 @@
 
 `application.yaml`中的schedule.url对应的是任务的json配置
 
-jobs.my.cron是自定义任务的默认定时任务值
+`jobs.my.cron`是自定义任务的默认定时任务值
 需要修改自定义的定时任务时，可以直接修改scheduleConfig.json中对应class的value即可
 
 示例：
